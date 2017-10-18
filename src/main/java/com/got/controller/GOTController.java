@@ -21,7 +21,7 @@ public class GOTController {
 	public GOTService gotService;
 	
 	@RequestMapping(method=RequestMethod.GET)
-	public List getAllGOTCharacters() {
+	public List<String> getAllGOTCharacters() {
 		return gotService.getAllGOTCharacters();
 	}
 	

@@ -23,11 +23,11 @@ public class GOTDao {
 	}
 	
 	// Getting all GOTCharacters from database
-	public List<GOTCharacter> getAllGOTCharacters(){
-		return new ArrayList<GOTCharacter>(allCharacters.values());
+	public List<String> getAllGOTCharacters(){
+		return new ArrayList<String>(allCharacters.keySet());
 	}
 	
-	// Getting a GOTCharacter 
+	// Getting a GOTCharacter details
 	public GOTCharacter getGOTCharacter(String name){
 		return (allCharacters.get(name));
 	}

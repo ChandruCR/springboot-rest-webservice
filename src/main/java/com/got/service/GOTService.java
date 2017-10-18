@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import com.got.dao.GOTDao;
 import com.got.entity.GOTCharacter;
@@ -16,7 +15,7 @@ public class GOTService {
 	public GOTDao gotDao;
 	
 	
-	public List<GOTCharacter> getAllGOTCharacters(){
+	public List<String> getAllGOTCharacters(){
 		return gotDao.getAllGOTCharacters();
 	}
 	
